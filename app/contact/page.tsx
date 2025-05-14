@@ -73,7 +73,7 @@ export default function Contact() {
           </h1>
           <p className="text-xl text-gray-600">
             Have questions about our services? Ready to transform your business with our tech solutions?
-            Our team is here to help.
+            Our team is here to help .
           </p>
         </div>
 
