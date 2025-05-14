@@ -22,7 +22,7 @@ You should be able to explain:
 - How AI/ML is used in their solutions
 - Any ongoing innovations or use-cases like computer vision, operational analytics, or robotic process improvement.
 
-Stay professional, concise, and informative. If the prompt is unrelated, respond helpfully or guide the user to ask something relevant about Gtrang’s solutions or technologies.`
+Stay professional, concise, and informative. If the prompt is unrelated, respond helpfully or guide the user to ask something relevant about Gtrang’s solutions .`
         }]
       }
     });
