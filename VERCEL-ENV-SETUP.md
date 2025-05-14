@@ -8,8 +8,6 @@ Follow these steps to add your Gemini API key to Vercel:
 2. Select your GTarang project
 3. Navigate to **Settings** → **Environment Variables**
 4. Add a new variable:
-   - **Name**: `NEXT_PUBLIC_GEMINI_API_KEY`
-   - **Value**: `AIzaSyCL7dXbddeF7jr8EhLf5qG5ZZXDICRm0YY`
    - **Environments**: Check all environments (Production, Preview, Development)
 5. Click **Save**
 6. Redeploy your application for changes to take effect
