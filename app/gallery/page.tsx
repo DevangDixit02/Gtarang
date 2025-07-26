@@ -3,7 +3,13 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-const galleryImages = [
+type SelectedImage = {
+  src: string;
+  title: string;
+  description: string;
+} | null;
+
+const galleryImages: SelectedImage[] = [
   {
     src: '/images/gallery/aga1.jpg',
     title: 'School Space Workshop',
@@ -52,7 +58,7 @@ const galleryImages = [
 ];
 
 export default function GalleryPage() {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState<SelectedImage>(null);
 
   return (
     <>
@@ -60,8 +66,7 @@ export default function GalleryPage() {
         <div className="container-custom text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Journey in Frames</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Explore some of our most exciting milestones from educational outreach and space system development to community engagement and recognition. Journey from the IIT Bombay launch to our global presence. This gallery captures our innovation and impact in action.
-
+            Explore some of our most exciting milestones from educational outreach and space system development to community engagement and recognition. Journey from the IIT Bombay launch to our global presence. This gallery captures our innovation and impact in action.
           </p>
         </div>
 
