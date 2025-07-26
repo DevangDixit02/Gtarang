@@ -18,8 +18,7 @@ export default function Services() {
               </h1>
             </div>
             <p className="text-xl text-gray-600">
-              We provide specialized consulting services in Robotics, AI, Warehouse Automation, 
-              and Satellite technologies with comprehensive design, development, and testing support.
+              We offer specialized consulting services across  Satellite Technologies , Artificial Intelligence, Warehouse Automation delivering end-to-end support in system design, development, integration, and testing.
             </p>
           </div>
         </div>
@@ -30,6 +29,52 @@ export default function Services() {
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-16">
             
+              {/* Satellite Technology Consulting */}
+            <div id="satellite" className="service-item">
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="w-16 h-16 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M21.92,2.62a1,1,0,0,0-.54-.54A1,1,0,0,0,21,2H16a1,1,0,0,0,0,2h2.59L13.29,9.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L20,5.41V8a1,1,0,0,0,2,0V3A1,1,0,0,0,21.92,2.62ZM19,19H5V5h6a1,1,0,0,0,0-2H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V13a1,1,0,0,0-2,0ZM12.29,16.71c.23-.23,1.71-1.68,1.71-3.08s-1.48-2.85-1.71-3.08a1,1,0,0,0-1.42,0C10.64,10.78,9,12.38,9,13.63s1.64,2.85,1.87,3.08a1,1,0,0,0,1.42,0ZM12,12c.17.19.45.56.63.88a5.73,5.73,0,0,1-.63.88,5.73,5.73,0,0,1-.63-.88A5.41,5.41,0,0,1,12,12Z" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Satellite Technology Consulting</h2>
+                  <p className="text-gray-600 mb-6">
+                    Our satellite technology consulting services provide expert guidance on satellite system design, 
+                    development, and testing for communications and earth observation applications.
+                  </p>
+                  <div className="space-y-4">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h3 className="font-semibold text-gray-900 mb-2">System Design & Architecture</h3>
+                      <p className="text-gray-600">
+                        Expert design of satellite systems including payload configuration, communications architecture, 
+                        power systems, and orbital mechanics planning.
+                      </p>
+                    </div>
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h3 className="font-semibold text-gray-900 mb-2">Development Support</h3>
+                      <p className="text-gray-600">
+                        Technical support throughout the development process, including component selection, 
+                        interface design, subsystem integration, and software development.
+                      </p>
+                    </div>
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h3 className="font-semibold text-gray-900 mb-2">Testing & Validation</h3>
+                      <p className="text-gray-600">
+                        Comprehensive testing and validation services including environmental testing, 
+                        performance verification, integration testing, and pre-launch certification.
+                      </p>
+                    </div>
+                  </div>
+                  <Link href="/contact" className="mt-6 inline-flex items-center text-purple-600 hover:text-purple-700">
+                    Discuss your satellite project
+                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
             {/* Robotics Consulting */}
             <div id="robotics" className="service-item">
               <div className="flex flex-col md:flex-row gap-6 items-start">
@@ -171,52 +216,7 @@ export default function Services() {
               </div>
             </div>
             
-            {/* Satellite Technology Consulting */}
-            <div id="satellite" className="service-item">
-              <div className="flex flex-col md:flex-row gap-6 items-start">
-                <div className="w-16 h-16 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M21.92,2.62a1,1,0,0,0-.54-.54A1,1,0,0,0,21,2H16a1,1,0,0,0,0,2h2.59L13.29,9.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L20,5.41V8a1,1,0,0,0,2,0V3A1,1,0,0,0,21.92,2.62ZM19,19H5V5h6a1,1,0,0,0,0-2H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V13a1,1,0,0,0-2,0ZM12.29,16.71c.23-.23,1.71-1.68,1.71-3.08s-1.48-2.85-1.71-3.08a1,1,0,0,0-1.42,0C10.64,10.78,9,12.38,9,13.63s1.64,2.85,1.87,3.08a1,1,0,0,0,1.42,0ZM12,12c.17.19.45.56.63.88a5.73,5.73,0,0,1-.63.88,5.73,5.73,0,0,1-.63-.88A5.41,5.41,0,0,1,12,12Z" />
-                  </svg>
-                </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">Satellite Technology Consulting</h2>
-                  <p className="text-gray-600 mb-6">
-                    Our satellite technology consulting services provide expert guidance on satellite system design, 
-                    development, and testing for communications and earth observation applications.
-                  </p>
-                  <div className="space-y-4">
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h3 className="font-semibold text-gray-900 mb-2">System Design & Architecture</h3>
-                      <p className="text-gray-600">
-                        Expert design of satellite systems including payload configuration, communications architecture, 
-                        power systems, and orbital mechanics planning.
-                      </p>
-                    </div>
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h3 className="font-semibold text-gray-900 mb-2">Development Support</h3>
-                      <p className="text-gray-600">
-                        Technical support throughout the development process, including component selection, 
-                        interface design, subsystem integration, and software development.
-                      </p>
-                    </div>
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h3 className="font-semibold text-gray-900 mb-2">Testing & Validation</h3>
-                      <p className="text-gray-600">
-                        Comprehensive testing and validation services including environmental testing, 
-                        performance verification, integration testing, and pre-launch certification.
-                      </p>
-                    </div>
-                  </div>
-                  <Link href="/contact" className="mt-6 inline-flex items-center text-purple-600 hover:text-purple-700">
-                    Discuss your satellite project
-                    <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
+          
           </div>
         </div>
       </section>

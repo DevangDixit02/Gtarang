@@ -36,7 +36,13 @@ const Navbar = () => {
               Services
             </Link>
             <Link href="/ai-solutions" className="text-gray-700 hover:text-gtarang-blue font-medium transition-colors">
-              AI Solutions
+              SATAI
+            </Link>
+            <Link href="/team" className="text-gray-700 hover:text-gtarang-blue font-medium transition-colors">
+              Team
+            </Link>
+            <Link href="/gallery" className="text-gray-700 hover:text-gtarang-blue font-medium transition-colors">
+              Gallery
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-gtarang-blue font-medium transition-colors">
               Contact
@@ -97,7 +103,21 @@ const Navbar = () => {
                 className="text-gray-700 hover:text-gtarang-blue font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                AI Solutions
+                SatAI
+              </Link>
+              <Link
+                href="/team"
+                className="text-gray-700 hover:text-gtarang-blue font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Team
+              </Link>
+              <Link
+                href="/gallery"
+                className="text-gray-700 hover:text-gtarang-blue font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Gallery
               </Link>
               <Link
                 href="/contact"
@@ -114,4 +134,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
