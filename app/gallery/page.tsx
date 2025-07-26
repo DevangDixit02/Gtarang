@@ -3,13 +3,15 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-type SelectedImage = {
+type GalleryImage = {
   src: string;
   title: string;
   description: string;
-} | null;
+};
 
-const galleryImages: SelectedImage[] = [
+type SelectedImage = GalleryImage | null;
+
+const galleryImages: GalleryImage[] = [
   {
     src: '/images/gallery/aga1.jpg',
     title: 'School Space Workshop',
