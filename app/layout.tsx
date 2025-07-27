@@ -13,14 +13,14 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'GTarang Solutions - Technology Consulting Services',
-  description: 'Specialized consulting in Robotics, AI, Warehouse Automation, and Satellite Technology',
-  keywords: 'robotics, AI, automation, satellite technology, consulting, tech solutions, India',
+  title: 'GTarang Solutions - Satellite & AI Consulting Services',
+  description: 'Transform your business with Satellite intelligence and AI-driven solutions. GTarang empowers Indian enterprises through cutting-edge space technologies, intelligent automation, and strategic innovation.',
+  keywords: 'satellite technology, AI, artificial intelligence, automation, consulting, space tech, India, GTarang Solutions',
   icons: {
     icon: '/favicon.ico',
     apple: '/favicon.ico',
     shortcut: '/favicon.ico',
-  },
+  }
 };
 
 export default function RootLayout({
