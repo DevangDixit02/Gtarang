@@ -13,51 +13,85 @@ type SelectedImage = GalleryImage | null;
 
 const galleryImages: GalleryImage[] = [
   {
-    src: '/images/gallery/aga1.jpg',
-    title: 'Space Workshop at Schools',
-    description: 'Igniting young minds with hands-on activities and interactive learning about space science.'
+    src: '/images/gallery/meet1.jpg',
+    title: 'In Conversation with ISRO Leadership',
+    description: 'A moment of pride as we receive insights and encouragement from the Chairman of ISRO.'
+  },
+  {
+    src: '/images/gallery/mn.jpg',
+    title: 'Inspiring Future Innovators',
+    description: 'Manvi engages with students, sparking curiosity and motivation to explore space science.'
   },
   {
     src: '/images/gallery/rocket.jpg',
-    title: 'First Rocket Launch',
-    description: 'A landmark moment marking our entry into space experimentation and propulsion testing.'
+    title: 'Maiden Rocket Launch',
+    description: 'Our entry into space propulsion marked by the successful launch of our first test rocket.'
   },
   {
     src: '/images/gallery/workshop.jpg',
-    title: 'Satellite Systems Workshop',
-    description: 'Students engage in building and testing satellite modules during our immersive training session.'
-  },
-  {
-    src: '/images/gallery/meet1.jpg',
-    title: 'Interaction with ISRO Chairman',
-    description: 'A proud moment of receiving encouragement and insights from the head of India’s space agency.'
+    title: 'Hands-on Satellite Workshop',
+    description: 'Students immerse themselves in designing, building, and testing satellite systems.'
   },
   {
     src: '/images/gallery/hqdefault.jpg',
-    title: 'Pratham Satellite Launch',
-    description: 'Celebrating the successful launch of “Pratham” — our student-built satellite from IIT Bombay.'
+    title: 'Pratham Satellite Launched',
+    description: 'Celebrating “Pratham” — IIT Bombay’s student-built satellite successfully launched into orbit.'
   },
   {
     src: '/images/gallery/dis.jpeg',
-    title: 'Accessible Space Education',
-    description: 'Designing inclusive experiences to empower differently-abled children with space exploration tools.'
+    title: 'Inclusive Space Education',
+    description: 'Creating accessible learning experiences to empower differently-abled children in STEM.'
   },
   {
     src: '/images/gallery/eminent.jpg',
-    title: 'Expert Reviews Before Launch',
-    description: 'Collaborating with industry and academic experts to validate our satellite mission and payload design.'
+    title: 'Mission Validation by Experts',
+    description: 'Our satellite designs undergo rigorous review by senior experts from academia and industry.'
   },
   {
     src: '/images/gallery/women.jpeg',
-    title: 'Girls in Space STEM',
-    description: 'Encouraging girls in rural and urban areas to explore STEM through space-focused workshops and mentorship.'
+    title: 'Girls Reaching for the Stars',
+    description: 'Encouraging young girls across India to explore STEM careers through space-tech initiatives.'
   },
   {
-    src: '/images/gallery/Gtarang.png',
-    title: 'IIT Bombay Recognition',
-    description: 'Awarded and recognized by IIT Bombay for excellence in innovation and social impact through space technology.'
+    src: '/images/gallery/agaNews.jpg',
+    title: 'AGA in the Media Spotlight',
+    description: 'Featured in major news outlets for pioneering work in space education and innovation.'
   }
 ];
+
+
+const recognitionImages = {
+  poweredAccelerator: [
+    {
+      src: '/images/recognition/powered1.jpg',
+      title: 'Powered Accelerator Felicitation',
+      description: 'Honored with the Powered Accelerator award for leading a high-impact, women-led business.'
+    },
+    {
+      src: '/images/recognition/powered3.jpg',
+      title: 'Pitching AGA’s Vision',
+      description: 'Manvi presenting our space-tech vision to investors and mentors during the accelerator.'
+    },
+    {
+      src: '/images/recognition/powered2.png',
+      title: 'Selected Among Top Cohort',
+      description: 'Chosen as part of an elite cohort of entrepreneurs driving innovation and change.'
+    }
+  ],
+  iitBombay: [
+    {
+      src: '/images/team2.jpg',
+      title: 'Guidance from ISRO at IITB',
+      description: 'Receiving invaluable insights from ISRO’s Chairman during a visit to IIT Bombay.'
+    },
+    {
+      src: '/images/gallery/Gtarang.png',
+      title: 'IIT Bombay Recognition',
+      description: 'Celebrated by IIT Bombay for impactful work in space-tech and community outreach.'
+    }
+  ]
+};
+
 
 export default function GalleryPage() {
   const [selected, setSelected] = useState<SelectedImage>(null);
@@ -93,6 +127,70 @@ export default function GalleryPage() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Recognition Section */}
+      <div className="bg-gray-50 py-20">
+        <div className="container-custom text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Recognition</h2>
+          <p className="text-lg text-gray-600 max-w-xl mx-auto">
+            Honoring the achievements and accolades that celebrate our mission and leadership.
+          </p>
+        </div>
+
+        {/* Powered Accelerator */}
+        <div className="container-custom mb-16">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-6">Powered Accelerator Award for Women-led Business</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {recognitionImages.poweredAccelerator.map((img, index) => (
+              <div
+                key={index}
+                className="overflow-hidden rounded-lg shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                onClick={() => setSelected(img)}
+              >
+                <div className="relative w-full h-[220px]">
+                  <Image
+                    src={img.src}
+                    alt={img.title}
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="mt-3 text-center">
+                  <h3 className="text-lg font-semibold text-gray-900">{img.title}</h3>
+                  <p className="text-sm text-gray-600">{img.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* IIT Bombay */}
+        <div className="container-custom">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-6">IIT Bombay Recognition</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {recognitionImages.iitBombay.map((img, index) => (
+              <div
+                key={index}
+                className="overflow-hidden rounded-lg shadow hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                onClick={() => setSelected(img)}
+              >
+                <div className="relative w-full h-[220px]">
+                  <Image
+                    src={img.src}
+                    alt={img.title}
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <div className="mt-3 text-center">
+                  <h3 className="text-lg font-semibold text-gray-900">{img.title}</h3>
+                  <p className="text-sm text-gray-600">{img.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

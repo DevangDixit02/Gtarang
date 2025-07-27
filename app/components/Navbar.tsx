@@ -24,7 +24,6 @@ const Navbar = () => {
               className="rounded-md"
             />
             <span className="text-2xl font-bold text-gtarang-blue">GTarang</span>
-            <span className="text-xl font-semibold text-gtarang-green">Solutions</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -36,7 +35,7 @@ const Navbar = () => {
               Services
             </Link>
             <Link href="/ai-solutions" className="text-gray-700 hover:text-gtarang-blue font-medium transition-colors">
-              SATAI
+              SatAI
             </Link>
             <Link href="/team" className="text-gray-700 hover:text-gtarang-blue font-medium transition-colors">
               Team

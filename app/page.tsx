@@ -2,6 +2,13 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import {
+  Rocket,
+  Brain,
+  PackageCheck,
+  Users
+} from 'lucide-react';
+
 
 export default function Home() {
   return (
@@ -20,7 +27,7 @@ export default function Home() {
                 Pioneering <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-600">Satellite & AI Innovation</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                GTarang Technologies is a leading provider of cutting-edge satellite and AI solutions, offering comprehensive consulting services to help you navigate the complex world of space technology.
+                GTarang is a leading provider of cutting-edge satellite and AI solutions, offering comprehensive consulting services to help you navigate the complex world of space technology.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -42,14 +49,14 @@ export default function Home() {
             <div className="relative bg-white/30 backdrop-blur-xl border border-indigo-100 rounded-3xl shadow-lg p-6 md:p-8 flex flex-col items-center text-center transition hover:scale-105 duration-300">
               <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-2xl overflow-hidden border-4 border-indigo-100 shadow-md z-10 mb-6">
                 <Image
-                  src="/images/space.jpg"
+                  src="/images/roc.jpg"
                   alt="Satellite Showcase"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="z-50">
-                <h3 className="text-2xl md:text-3xl font-bold text-indigo-700 mb-2">GTarang Technologies</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-indigo-700 mb-2">GTarang </h3>
                 <p className="text-gray-600 text-base md:text-lg">
                   Accelerating Intelligence in Orbit
                 </p>
@@ -138,30 +145,56 @@ export default function Home() {
 
       {/* Why Choose Us */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-20">
-        <div className="container-custom text-center">
-          <h2 className="text-4xl font-bold mb-6">Why Choose GTarang</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
-            {[{
-              title: "Space Tech Focus",
-              desc: "Deep domain expertise in satellite system architecture, AI, and mission-critical aerospace workflows."
-            }, {
-              title: "AI-Powered Engineering",
-              desc: "Seamless fusion of ML pipelines, signal processing, and sensor analytics into space-grade platforms."
-            }, {
-              title: "End-to-End Delivery",
-              desc: "From concept and simulation to testing, GTarang supports the full product lifecycle."
-            }, {
-              title: "Client-Driven Culture",
-              desc: "Collaborative, agile teams delivering value with precision and measurable results."
-            }].map((item, i) => (
-              <div key={i} className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
-                <h4 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h4>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+  <div className="container-custom text-center">
+    <h2 className="text-4xl font-bold mb-6">Why Choose GTarang</h2>
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+      {/* Space Tech Focus */}
+      <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <div className="flex justify-center mb-4 text-indigo-600">
+          <Rocket size={36} />
         </div>
-      </section>
+        <h4 className="text-xl font-semibold text-gray-900 mb-2">Space Tech Focus</h4>
+        <p className="text-gray-600">
+          Deep domain expertise in satellite system architecture, AI, and mission-critical aerospace workflows.
+        </p>
+      </div>
+
+      {/* AI-Powered Engineering */}
+      <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <div className="flex justify-center mb-4 text-indigo-600">
+          <Brain size={36} />
+        </div>
+        <h4 className="text-xl font-semibold text-gray-900 mb-2">AI-Powered Engineering</h4>
+        <p className="text-gray-600">
+          Seamless fusion of ML pipelines, signal processing, and sensor analytics into space-grade platforms.
+        </p>
+      </div>
+
+      {/* End-to-End Delivery */}
+      <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <div className="flex justify-center mb-4 text-indigo-600">
+          <PackageCheck size={36} />
+        </div>
+        <h4 className="text-xl font-semibold text-gray-900 mb-2">End-to-End Delivery</h4>
+        <p className="text-gray-600">
+          From concept and simulation to testing, GTarang supports the full product lifecycle.
+        </p>
+      </div>
+
+      {/* Client-Driven Culture */}
+      <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300">
+        <div className="flex justify-center mb-4 text-indigo-600">
+          <Users size={36} />
+        </div>
+        <h4 className="text-xl font-semibold text-gray-900 mb-2">Client-Driven Culture</h4>
+        <p className="text-gray-600">
+          Collaborative, agile teams delivering value with precision and measurable results.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white py-20">
@@ -170,7 +203,7 @@ export default function Home() {
             Launch Your Next-Gen Mission with Us
           </h2>
           <p className="text-xl mb-6 text-blue-100">
-            Talk to us about building your satellite systems, AI stack, or automation pipeline.
+            Transform your business with Satellite and Ai intelligence
           </p>
           <div className="flex justify-center gap-4">
             <Link href="/contact" className="bg-white text-indigo-600 py-3 px-8 rounded-md font-semibold hover:bg-gray-100 transition">Contact Us</Link>

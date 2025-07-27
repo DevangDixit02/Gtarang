@@ -259,23 +259,43 @@ export default function Contact() {
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-gtarang-blue text-white p-3 rounded-full">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Office</h3>
-                    <p className="text-gray-600">
-                      Flat 702, Balaji Residency<br />
-                      Sec-15, Kharghar, Raigarh<br />
-                      Maharashtra - 410210<br />
-                      India
-                    </p>
-                  </div>
-                </div>
+<div className="flex items-start space-x-4">
+  <div className="bg-gtarang-blue text-white p-3 rounded-full">
+    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+  </div>
+
+  <div className="flex flex-col w-full">
+    <h3 className="font-semibold text-lg mb-2">Offices</h3>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Mumbai Office */}
+      <div>
+        <h4 className="font-semibold text-gray-800">Mumbai Office</h4>
+        <p className="text-gray-600">
+          Flat 702, Balaji Residency<br />
+          Sec-15, Kharghar, Raigarh<br />
+          Maharashtra - 410210<br />
+          India
+        </p>
+      </div>
+
+      {/* Bangalore Office */}
+      <div>
+        <h4 className="font-semibold text-gray-800">Bangalore Office</h4>
+        <p className="text-gray-600">
+          314, CBR Akshya<br />
+          7th Cross, LBS Nagar, HAL<br />
+          Bangalore, Karnataka - 560017<br />
+          India
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
               </div>
             </div>
           </div>
