@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 const teamMembers = [
   {
@@ -30,7 +31,22 @@ const teamMembers = [
   }
 ];
 
+const teamImages = [
+  '/images/team.jpg',
+  '/images/team2.jpg',
+  '/images/team1.jpg'
+];
+
 export default function TeamPage() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % teamImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen bg-white py-20">
       <div className="container-custom flex flex-col lg:flex-row items-center gap-12 mb-16">
@@ -40,12 +56,12 @@ export default function TeamPage() {
             At GTarang, our vision is to harness the power of AI and satellite intelligence to solve real world problems both on Earth and beyond. We are committed to building scalable, intelligent systems that transform whether through autonomous space analytics, AI-driven insights, or robotic innovation. Our team unites domain expertise and creative engineering to drive the next wave of space-tech innovation.
           </p>
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 relative w-[600px] h-[400px] transition-all duration-500 ease-in-out">
           <Image
-            src="/images/team.jpg"
+            key={teamImages[currentImageIndex]}
+            src={teamImages[currentImageIndex]}
             alt="GTarang Team"
-            width={600}
-            height={400}
+            fill
             className="rounded-lg shadow-md object-cover"
           />
         </div>

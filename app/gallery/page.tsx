@@ -14,48 +14,48 @@ type SelectedImage = GalleryImage | null;
 const galleryImages: GalleryImage[] = [
   {
     src: '/images/gallery/aga1.jpg',
-    title: 'School Space Workshop',
-    description: 'Inspiring curiosity through hands-on space education activities for young students.'
+    title: 'Space Workshop at Schools',
+    description: 'Igniting young minds with hands-on activities and interactive learning about space science.'
   },
   {
-    src: '/images/gallery/aga2.jpg',
-    title: 'Rocketry Training Session',
-    description: 'Interactive rocket-building sessions to nurture budding space scientists.'
+    src: '/images/gallery/rocket.jpg',
+    title: 'First Rocket Launch',
+    description: 'A landmark moment marking our entry into space experimentation and propulsion testing.'
   },
   {
     src: '/images/gallery/workshop.jpg',
-    title: 'Satellite Workshop',
-    description: 'Hands-on experience in building and testing satellite systems and components.'
+    title: 'Satellite Systems Workshop',
+    description: 'Students engage in building and testing satellite modules during our immersive training session.'
   },
   {
-    src: '/images/gallery/pratham.jpeg',
-    title: 'Student Satellite Project – Pratham',
-    description: 'Our involvement in IIT Bombay’s student-led Pratham satellite program for Earth observation.'
+    src: '/images/gallery/meet1.jpg',
+    title: 'Interaction with ISRO Chairman',
+    description: 'A proud moment of receiving encouragement and insights from the head of India’s space agency.'
   },
   {
     src: '/images/gallery/hqdefault.jpg',
-    title: 'Satellite Launch – Pratham',
-    description: 'Celebrating the successful launch of our first student satellite, “Pratham.”'
+    title: 'Pratham Satellite Launch',
+    description: 'Celebrating the successful launch of “Pratham” — our student-built satellite from IIT Bombay.'
   },
   {
     src: '/images/gallery/dis.jpeg',
-    title: 'Inclusive Space Education',
-    description: 'Empowering specially-abled children with accessible and exciting space learning programs.'
+    title: 'Accessible Space Education',
+    description: 'Designing inclusive experiences to empower differently-abled children with space exploration tools.'
   },
   {
     src: '/images/gallery/eminent.jpg',
-    title: 'Expert Guidance for Launch',
-    description: 'Collaborating with domain experts to ensure mission success and precision.'
+    title: 'Expert Reviews Before Launch',
+    description: 'Collaborating with industry and academic experts to validate our satellite mission and payload design.'
   },
   {
     src: '/images/gallery/women.jpeg',
     title: 'Girls in Space STEM',
-    description: 'Encouraging young girls to dream beyond the skies through targeted outreach and workshops.'
+    description: 'Encouraging girls in rural and urban areas to explore STEM through space-focused workshops and mentorship.'
   },
   {
     src: '/images/gallery/Gtarang.png',
-    title: 'Recognition from IIT Bombay',
-    description: 'Proudly recognized for innovation and contribution in space technology education.'
+    title: 'IIT Bombay Recognition',
+    description: 'Awarded and recognized by IIT Bombay for excellence in innovation and social impact through space technology.'
   }
 ];
 
