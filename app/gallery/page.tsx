@@ -69,8 +69,8 @@ const recognitionImages = {
     },
     {
       src: '/images/recognition/powered3.jpg',
-      title: 'Pitching AGA’s Vision',
-      description: 'Manvi presenting our space-tech vision to investors and mentors during the accelerator.'
+      title: 'Pitching GTarang’s Vision',
+      description: 'Manvi co-founder and CEO presenting our space-tech vision to investors and mentors during the accelerator.'
     },
     {
       src: '/images/recognition/powered2.png',
