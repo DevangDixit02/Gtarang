@@ -48,34 +48,40 @@ export default function TeamPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white py-20">
-      <div className="container-custom flex flex-col lg:flex-row items-center gap-12 mb-16">
+    <div className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 mb-16">
+        {/* Text Section */}
         <div className="lg:w-1/2">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Meet Our Team</h1>
           <p className="text-lg text-gray-600">
             At GTarang, our vision is to harness the power of AI and satellite intelligence to solve real world problems both on Earth and beyond. We are committed to building scalable, intelligent systems that transform whether through autonomous space analytics, AI-driven insights, or robotic innovation. Our team unites domain expertise and creative engineering to drive the next wave of space-tech innovation.
           </p>
         </div>
-        <div className="lg:w-1/2 relative w-[600px] h-[400px] transition-all duration-500 ease-in-out">
-          <Image
-            key={teamImages[currentImageIndex]}
-            src={teamImages[currentImageIndex]}
-            alt="GTarang Team"
-            fill
-            className="rounded-lg shadow-md object-cover"
-          />
+
+        {/* Slideshow Section */}
+        <div className="lg:w-1/2 w-full relative rounded-lg overflow-hidden shadow-md">
+          <div className="relative w-full aspect-[3/2]">
+            <Image
+              key={teamImages[currentImageIndex]}
+              src={teamImages[currentImageIndex]}
+              alt="GTarang Team"
+              fill
+              className="object-cover transition-opacity duration-500 rounded-lg"
+            />
+          </div>
         </div>
       </div>
 
-      <div className="container-custom grid md:grid-cols-3 gap-12">
+      {/* Team Member Cards */}
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-6">
         {teamMembers.map((member) => (
           <div key={member.name} className="bg-gray-50 rounded-lg shadow-md p-6 text-center">
             <Image
               src={member.image}
               alt={member.name}
-              width={120}
-              height={120}
-              className="mx-auto rounded-full object-cover"
+              width={112}
+              height={112}
+              className="mx-auto rounded-full object-cover w-24 h-24 sm:w-28 sm:h-28"
             />
             <h2 className="mt-4 text-xl font-semibold text-gray-900">{member.name}</h2>
             <p className="text-sm text-gray-500 font-medium">{member.title}</p>
