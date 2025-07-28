@@ -9,7 +9,7 @@ const teamMembers = [
     name: 'Manvi Dhawan',
     title: 'CEO',
     description:
-      'Manvi brings 3+ years of experience in project management and systems engineering, shaped through leading technical initiatives during her B.Tech + M.Tech at IIT Bombay. She believes that when businesses grow while embracing nature, nature supports us in achieving sustainable progress.',
+      'Manvi brings 12+ years of experience in project management and systems engineering, shaped through leading technical initiatives during her B.Tech + M.Tech at IIT Bombay. She believes that when businesses grow while embracing nature, nature supports us in achieving sustainable progress.',
     image: '/images/manvi.png',
     linkedin: 'https://www.linkedin.com/in/manvidhawan/'
   },
@@ -17,7 +17,7 @@ const teamMembers = [
     name: 'Ratnesh Mishra',
     title: 'CTO',
     description:
-      'An IIT Bombay alumnus with 4 years of hands-on experience in high-tech R&D, Ratnesh possesses deep technical acumen and team leadership skills. He champions the idea that success is earned not just through brilliance but through consistent hard work and unshakable dedication.',
+      'An IIT Bombay alumnus with 13 years of hands-on experience in high-tech R&D, Ratnesh possesses deep technical acumen and team leadership skills. He champions the idea that success is earned not just through brilliance but through consistent hard work and unshakable dedication.',
     image: '/images/ratnesh.jpg',
     linkedin: 'https://www.linkedin.com/in/ratnesh-mishra-26946179/'
   },
