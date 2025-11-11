@@ -9,7 +9,11 @@ const teamMembers = [
     name: 'Manvi Dhawan',
     title: 'Chief Executive Officer',
     description:
+<<<<<<< HEAD
       'Manvi leads GTarang with a mission to fuse sustainability with innovation. An IIT Bombay (B.Tech + M.Tech) graduate with 3+ years in systems engineering and project management, she has spearheaded multi-disciplinary initiatives that unite nature-driven thinking with scalable technology. Her leadership philosophy focuses on developing intelligent, responsible, and eco-conscious systems that help industries evolve sustainably.',
+=======
+      'Manvi brings 12+ years of experience in project management and systems engineering, shaped through leading technical initiatives during her B.Tech + M.Tech at IIT Bombay. She believes that when businesses grow while embracing nature, nature supports us in achieving sustainable progress.',
+>>>>>>> c8ec43fbab89f2a63e2d6355eb5aa47fea8de9f1
     image: '/images/manvi.png',
     linkedin: 'https://www.linkedin.com/in/manvidhawan/'
   },
@@ -17,7 +21,11 @@ const teamMembers = [
     name: 'Ratnesh Mishra',
     title: 'Chief Technology Officer',
     description:
+<<<<<<< HEAD
       'Ratnesh, an IIT Bombay alumnus, brings over four years of advanced R&D and product development experience to GTarang. As a systems architect and innovation leader, he combines precision engineering with a visionary mindset to deliver dependable, scalable, and high-performance technologies. His approach is rooted in disciplined engineering, teamwork, and the belief that excellence emerges from consistent effort and curiosity.',
+=======
+      'An IIT Bombay alumnus with 13 years of hands-on experience in high-tech R&D, Ratnesh possesses deep technical acumen and team leadership skills. He champions the idea that success is earned not just through brilliance but through consistent hard work and unshakable dedication.',
+>>>>>>> c8ec43fbab89f2a63e2d6355eb5aa47fea8de9f1
     image: '/images/ratnesh.jpg',
     linkedin: 'https://www.linkedin.com/in/ratnesh-mishra-26946179/'
   },
